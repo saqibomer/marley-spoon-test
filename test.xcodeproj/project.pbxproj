@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AA123AA9229D14720080B6FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA123AA8229D14720080B6FF /* AppDelegate.swift */; };
-		AA123AAB229D14720080B6FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA123AAA229D14720080B6FF /* ViewController.swift */; };
 		AA123AAE229D14720080B6FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA123AAC229D14720080B6FF /* Main.storyboard */; };
 		AA123AB1229D14720080B6FF /* test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA123AAF229D14720080B6FF /* test.xcdatamodeld */; };
 		AA123AB3229D14740080B6FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA123AB2229D14740080B6FF /* Assets.xcassets */; };
 		AA123AB6229D14740080B6FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA123AB4229D14740080B6FF /* LaunchScreen.storyboard */; };
 		AA123AC1229D14750080B6FF /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA123AC0229D14750080B6FF /* testTests.swift */; };
 		AA123ACC229D14750080B6FF /* testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA123ACB229D14750080B6FF /* testUITests.swift */; };
+		AA123ADF229D18540080B6FF /* RecipesVcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA123ADE229D18540080B6FF /* RecipesVcViewController.swift */; };
+		AA123AE4229D18AD0080B6FF /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA123AE3229D18AD0080B6FF /* RecipesViewModel.swift */; };
+		AA123AE6229D18C10080B6FF /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA123AE5229D18C10080B6FF /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		AA123AA5229D14720080B6FF /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA123AA8229D14720080B6FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA123AAA229D14720080B6FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA123AAD229D14720080B6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA123AB0229D14720080B6FF /* test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = test.xcdatamodel; sourceTree = "<group>"; };
 		AA123AB2229D14740080B6FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		AA123AC7229D14750080B6FF /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA123ACB229D14750080B6FF /* testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUITests.swift; sourceTree = "<group>"; };
 		AA123ACD229D14750080B6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA123ADE229D18540080B6FF /* RecipesVcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesVcViewController.swift; sourceTree = "<group>"; };
+		AA123AE3229D18AD0080B6FF /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		AA123AE5229D18C10080B6FF /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,12 @@
 		AA123AA7229D14720080B6FF /* test */ = {
 			isa = PBXGroup;
 			children = (
+				AA123ADD229D14BA0080B6FF /* Helpers */,
+				AA123ADC229D14B20080B6FF /* ViewModels */,
+				AA123ADB229D14A20080B6FF /* Network */,
+				AA123ADA229D14980080B6FF /* Controllers */,
+				AA123AD9229D14910080B6FF /* Models */,
 				AA123AA8229D14720080B6FF /* AppDelegate.swift */,
-				AA123AAA229D14720080B6FF /* ViewController.swift */,
 				AA123AAC229D14720080B6FF /* Main.storyboard */,
 				AA123AB2229D14740080B6FF /* Assets.xcassets */,
 				AA123AB4229D14740080B6FF /* LaunchScreen.storyboard */,
@@ -126,6 +134,44 @@
 				AA123ACD229D14750080B6FF /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		AA123AD9229D14910080B6FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA123AE5229D18C10080B6FF /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA123ADA229D14980080B6FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA123ADE229D18540080B6FF /* RecipesVcViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AA123ADB229D14A20080B6FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AA123ADC229D14B20080B6FF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA123AE3229D18AD0080B6FF /* RecipesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA123ADD229D14BA0080B6FF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA123AAB229D14720080B6FF /* ViewController.swift in Sources */,
+				AA123AE4229D18AD0080B6FF /* RecipesViewModel.swift in Sources */,
 				AA123AA9229D14720080B6FF /* AppDelegate.swift in Sources */,
+				AA123ADF229D18540080B6FF /* RecipesVcViewController.swift in Sources */,
 				AA123AB1229D14720080B6FF /* test.xcdatamodeld in Sources */,
+				AA123AE6229D18C10080B6FF /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LPSTH4CZ2;
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7LPSTH4CZ2;
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
