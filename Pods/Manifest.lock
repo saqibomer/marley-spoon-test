@@ -1,0 +1,60 @@
+PODS:
+  - Alamofire (5.0.0-beta.6)
+  - AlamofireObjectMapper (6.0.0):
+    - Alamofire (= 5.0.0-beta.6)
+    - ObjectMapper (~> 3.4)
+  - Kingfisher (5.4.0)
+  - MarqueeLabel (4.0.0)
+  - NotificationBannerSwift (2.2.0):
+    - MarqueeLabel (~> 4.0.0)
+    - SnapKit (~> 5.0.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - ObjectMapper (3.4.2)
+  - SkeletonView (1.5)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.6)
+  - AlamofireObjectMapper (from `https://github.com/RomanPodymov/AlamofireObjectMapper.git`, branch `master`)
+  - Kingfisher (~> 5.0)
+  - NotificationBannerSwift
+  - NVActivityIndicatorView
+  - SkeletonView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - SkeletonView
+    - SnapKit
+
+EXTERNAL SOURCES:
+  AlamofireObjectMapper:
+    :branch: master
+    :git: https://github.com/RomanPodymov/AlamofireObjectMapper.git
+
+CHECKOUT OPTIONS:
+  AlamofireObjectMapper:
+    :commit: 5d1841afdfea50dc548c5b3e303f6a3c352a2b51
+    :git: https://github.com/RomanPodymov/AlamofireObjectMapper.git
+
+SPEC CHECKSUMS:
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  AlamofireObjectMapper: 19597e82543f0c838f33403e37d5c4a4ac491d61
+  Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
+  MarqueeLabel: b55b26e690b6ad41faedd95cbf5eae6f1d1735b4
+  NotificationBannerSwift: 0ebb4b35e18c0515fdfe01b5ebd90c3eb1255e3d
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  SkeletonView: 6cbb80f82f8bdee3f9093e2fa03b84819b4bd826
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: 6565c5a0556129c568844243eaf11a550dedd407
+
+COCOAPODS: 1.6.0
